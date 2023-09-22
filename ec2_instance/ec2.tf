@@ -8,5 +8,9 @@ terraform {
 provider "aws"{
     region = "ap-southeast-1"
     access_key = "AKIATLTODK5RNPYHXZFC"
-    secret_key = ""
+    secret_key = "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"
+}
+resource "aws_instance" "linux-server"{
+    ami = "ami-0094a5917d668fcd7"
+    instance_type = "t2.micro"
 }
